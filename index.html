@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Budget Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Header -->
+    <header id="main-header">
+        <h1>My Budget Tracker</h1>
+
+        <p>
+            Track your income and expenses in one place.
+            Manage your money and stay organized.
+        </p>
+    </header>
+
+    <main>
+
+        <!-- Add Expense Section -->
+        <section class="expense-form">
+
+            <h2>Add Expense</h2>
+
+            <div class="input-group">
+                <label for="expense-name">Expense Name</label>
+                <input
+                    type="text"
+                    id="expense-name"
+                    placeholder="Enter expense name"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="expense-amount">Amount (KSh)</label>
+                <input
+                    type="number"
+                    id="expense-amount"
+                    placeholder="Enter amount"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="expense-category">Category</label>
+
+                <select id="expense-category">
+                    <option value="">Select a category</option>
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Education">Education</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+        </section>
+
+        <!-- Your Expenses Section -->
+        <section id="expenses-section">
+
+            <h2>Your Expenses</h2>
+
+            <p class="empty-message">
+                No expenses yet. Your expenses will appear here.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Personal Budget Tracker &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
